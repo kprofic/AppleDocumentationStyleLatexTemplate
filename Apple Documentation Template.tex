@@ -33,6 +33,25 @@
 {\color{VeniceBlue}\large\bfseries}
 
 
+% Define the colors of table of contents
+% This is helpful to understand http://tex.stackexchange.com/questions/110253/what-the-first-argument-for-lsubsection-actually-is
+\definecolor{LochmaraColor}{HTML}{0C88CC}
+
+\makeatletter
+
+\renewcommand{\l@section}[2]{\vspace{14pt}\@dottedtocline{2}{0pt}{0pt}{\bfseries\textcolor{LochmaraColor}{#1}}{#2}} 
+\renewcommand{\l@subsection}[2]{\@dottedtocline{2}{0pt}{0pt}{\textcolor{LochmaraColor}{#1}}{#2}}
+\renewcommand{\l@subsubsection}[2]{\@dottedtocline{2}{20pt}{0pt}{\textcolor{LochmaraColor}{#1}}{#2}}
+
+\renewcommand{\@dotsep}{10000}
+
+\makeatother
+
+
+% Insert 22pt white space before roc title. \titlespacing at line 65 changes it by -22 later on.
+\renewcommand*\contentsname{\hspace{22pt}Contents}
+
+
 % Remove numbers before sections, it does not remove a spacing from the left side of section
 % Look below to see how I remove them
 \renewcommand\thesection{}
@@ -97,6 +116,8 @@
 \author{Wojciech Nagrodzki}
 \maketitle
 \end{titlepage}
+
+\tableofcontents
 
 % Presenting text
 \section{Lorem ipsum dolor sit amet}
