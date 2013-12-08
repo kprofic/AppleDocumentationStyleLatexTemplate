@@ -16,6 +16,7 @@
 \usepackage{hyperref}
 \usepackage{verbatim}
 \usepackage[framemethod=TikZ]{mdframed}
+\usepackage{hyperref}
 \usepackage{lipsum}
 
 
@@ -98,6 +99,13 @@
 {\endmdframed\vspace{12pt}}
 
 
+% Hyperlinks
+\hypersetup{
+    colorlinks = true,
+    allcolors = {LochmaraColor},
+}
+
+
 % Will Robertson's fontspec.sty can be used to simplify font choices.
 % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
 % and change "Hoefler Text" to any of these choices.
@@ -141,7 +149,7 @@
 \lipsum[7]
 
 % Presenting code listing
-\section{Lorem ipsum dolor sit amet}
+\section{Fusce sed justo eu urna porta tincidunt.}
 
 \begin{codelisting}
 - (BOOL)loginUser:(NSString *)user withPassword:(NSString *)password error:(NSError **)error
@@ -165,7 +173,7 @@
 }
 \end{codelisting}
 
-\subsection{Fusce mauris. Vestibulum luctus nibh at lectus}
+\subsection{Aenean faucibus pede eu ante}
 
 \begin{codelisting}
 typedef NS_ENUM(NSInteger, Enumeration) {
@@ -176,7 +184,7 @@ typedef NS_ENUM(NSInteger, Enumeration) {
 };
 \end{codelisting}
 
-\subsubsection{Pellentesque habitant morbi tristique senectus et netus}
+\subsubsection{Quisque egestas wisi eget nunc}
 
 \begin{codelisting}
 + (NSCalendar *)currentCalendar
@@ -221,19 +229,19 @@ static void * const kNavigationItemKey = (void *)&kNavigationItemKey;
 \lipsum[9]
 
 % Presenting tip listing
-\section{Lorem ipsum dolor sit amet}
+\section{Cum sociis natoque penatibus et magnis dis parturient montes}
 
 \begin{tiplisting}
 \lipsum[10-11]
 \end{tiplisting}
 
-\subsection{Fusce mauris. Vestibulum luctus nibh at lectus}
+\subsection{Fusce elementum convallis neque}
 
 \begin{tiplisting}
 \lipsum[12-13]
 \end{tiplisting}
 
-\subsubsection{Pellentesque habitant morbi tristique senectus et netus}
+\subsubsection{Etiam ac leo a risus tristique nonummy}
 
 \begin{tiplisting}
 \lipsum[14]
@@ -250,19 +258,19 @@ static void * const kNavigationItemKey = (void *)&kNavigationItemKey;
 \lipsum[17]
 
 % Presenting important note listing
-\section{Lorem ipsum dolor sit amet}
+\section{Phasellus facilisis ipsum quis ante}
 
 \begin{importantlisting}
 \lipsum[18-19]
 \end{importantlisting}
 
-\subsection{Nulla in ipsum. Praesent eros nulla, congue vitae}
+\subsection{Nullam urna nulla, ullamcorper in, interdum sit amet}
 
 \begin{importantlisting}
 \lipsum[20]
 \end{importantlisting}
 
-\subsubsection{Fusce mauris. Vestibulum luctus nibh at lectus}
+\subsubsection{Suspendisse congue nisl eu elit}
 
 \begin{importantlisting}
 \lipsum[21]
@@ -277,5 +285,10 @@ static void * const kNavigationItemKey = (void *)&kNavigationItemKey;
 \end{importantlisting}
 
 \lipsum[24]
+
+% Presenting hyperlinks
+\section{Vestibulum ante ipsum primis in faucibus orci luctus}
+
+\href{https://github.com/izydor86/AppleDocumentationStyleLatexTemplate}{Vivamus} eu tellus sed tellus consequat suscipit. Nam orci orci, malesuada id, gravida nec, ultricies vitae, erat. Donec risus turpis, luctus sit amet, interdum quis, porta sed, ipsum. Suspendisse condi- mentum, tortor at egestas posuere, neque metus tempor orci, et tincidunt urna nunc a purus. Sed facilisis blandit tellus. Nunc risus sem, suscipit nec, eleifend quis, cursus quis, \href{https://github.com/izydor86/AppleDocumentationStyleLatexTemplate}{libero}. Curabitur et dolor. Sed vitae sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ante. Duis ullamcorper enim. Donec tristique enim eu leo. Nullam mo- lestie elit eu dolor. \href{https://github.com/izydor86/AppleDocumentationStyleLatexTemplate}{Nullam bibendum}, turpis vitae tristique gravida, quam sapien tempor lectus, quis pretium tellus purus ac quam. Nulla facilisi.
 
 \end{document}
