@@ -23,7 +23,7 @@
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{hyperref}
 \usepackage{lipsum}
-
+\usepackage{minted}
 
 % Define section, subsection and subsubsection font size and color
 \definecolor{AllportsColor}{HTML}{0769AE}
@@ -85,9 +85,10 @@
 
 % Lists a code inside of a blue border
 \definecolor{BaliHaiColor}{HTML}{7CA1B3}
-\newenvironment{codelisting}
-{\footnotesize\mdframed[middlelinewidth=0.5pt, middlelinecolor=BaliHaiColor, skipabove=15pt]\verbatim}
-{\endverbatim\endmdframed\vspace{12pt}\normalsize}
+\newminted[codelisting]{objective-c}{tabsize=4, fontsize=\footnotesize}
+\usemintedstyle{xcode}
+\BeforeBeginEnvironment{codelisting}{\footnotesize\mdframed[middlelinewidth=0.5pt, middlelinecolor=BaliHaiColor, skipabove=15pt]}%
+\AfterEndEnvironment{codelisting}{\endmdframed\vspace{12pt}\normalsize}%
 
 
 % Lists text inside yellow border
