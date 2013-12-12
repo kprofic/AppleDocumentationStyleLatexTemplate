@@ -21,7 +21,7 @@ class XcodeStyle(Style):
     DEVINFO:
     Elements that are commented out seem not to give any value.
 
-    Missing elements (not recognized by parser):
+    MISSING ELEMENTS (not recognized by parser):
     self
     super
     instancetype
@@ -39,6 +39,10 @@ class XcodeStyle(Style):
     __autoreleasing __block __weak
     ivars
     #define usages
+    
+    ERRORS:
+    + and - sign used as a first character of method declaration / definition gets coloured as a Keyword when we miss:
+    @implementation{} at the begining of source code
     """
 
     default_style = ''
