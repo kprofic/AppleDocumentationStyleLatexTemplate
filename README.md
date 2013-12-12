@@ -7,7 +7,8 @@ Using this template you can generate PDFs similar to Apple documentation PDFs.
 Code highlighting using minted:
 
 To compile document that uses minted powered code listings use the following command:
-$ xelatex --file-line-error --synctex=1 --shell-escape "Apple Documentation Template.tex"
+
+$ xelatex --file-line-error --synctex=1 --shell-escape --interaction=nonstopmode "Apple Documentation Template.tex"
 
 To use Xcode pygments style this extra setup is required:
 
